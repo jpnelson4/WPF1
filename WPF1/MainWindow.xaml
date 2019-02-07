@@ -6,7 +6,21 @@
         xmlns:local="clr-namespace:WPF1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="#FF79DFE9">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="37*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="756*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="136.667,51,0,0" Grid.Column="2" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="txtAddress" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="136.667,108,0,0" Grid.Column="2" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="txtZip" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="136.667,167,0,0" Grid.Column="2" TextChanged="TextBox_TextChanged"/>
+        <Label x:Name="lblName" Content="First Name" VerticalAlignment="Top" RenderTransformOrigin="4.156,3.538" Margin="0,48,624.333,0" HorizontalAlignment="Right" Width="77" Height="26" Grid.Column="2"/>
+        <Label Content="Address" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Grid.Column="2" Margin="54.667,104,0,0"/>
+        <Label x:Name="lblZip" Content="Zip Code" HorizontalAlignment="Left" VerticalAlignment="Top" Width="82" Grid.Column="2" Margin="54.667,164,0,0"/>
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Height="40" Grid.Column="2" Margin="136.667,216,0,0" Click="btnSubmit_Click" Background="#FFA06BB0"/>
+        <ListBox x:Name="lst" HorizontalAlignment="Left" Height="208" VerticalAlignment="Top" Width="227" Grid.Column="2" Margin="433.667,48,0,0" Background="#FFDEF219" SelectionChanged="ListBox_SelectionChanged"/>
+
     </Grid>
 </Window>
